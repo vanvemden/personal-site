@@ -1,0 +1,148 @@
+.jumbotron {
+    background-color: #ffffff;
+}
+
+.parallax {  
+    margin:15px 30px 30px 30px;  
+    border-radius:10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height:80vh;
+    color: transparent;
+}
+
+.parallax label {
+    display: block;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 21px;
+}
+
+.parallax.overlay label {
+    display: none;
+}
+
+.parallax.overlay {
+    background-color: #eeeeee;
+    background-blend-mode: overlay;
+    color: initial;
+}
+
+.parallax.overlay .glyphicon-remove-sign:before {
+    content: "\e088";
+    color: orange;
+}
+
+ .glyphicon {
+    font-size: 3em;
+    color: green;
+}
+
+#hero {
+    height: 45vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+    background-image: url("img/marco.png");
+    background-color: black;
+    color: white;
+}
+
+#work {
+    background-image: url("img/work.png");
+}
+
+#social {
+    background-image: url("img/chicago-2.jpg");
+}
+
+#life {
+    background-image: url("img/life.png");
+}
+
+ .lead {
+    font-family:raleway;  
+    font-weight:100;  
+    margin-top:-10px;  
+ }
+
+/* Boostrap overrides */
+ body { 
+     padding-top: 50px;
+     padding-bottom: 20vh;
+ }
+
+ .nav {
+    border: none;
+    background-color: white;
+    color: #405167;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+ }
+
+ /* Animations */
+ .glyphicon:hover{
+    animation: pop 0.3s linear 1;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+}
+
+#skills .score {
+    float: right;
+}
+
+#skills .glyphicon-star {
+    color: #eee;
+}
+
+#skills .glyphicon-star.filled {
+    color: gold;
+}
+
+#skills .glyphicon {
+    font-size: 14px;
+}
+
+#contact a {
+    display: block;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    float: left;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.contact-icon.twitter {
+    background: url(img/twitter-bug.png)
+}
+
+.contact-icon.linkedin {
+    background: url(img/linkedin-bug.png);
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 35vh;
+        background-position: right bottom;
+    }
+}
+
