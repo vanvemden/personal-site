@@ -2,6 +2,13 @@
     background-color: #ffffff;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;}
+
+/* parallax without overlay (showing bg image) */
 .parallax {  
     margin:15px 30px 30px 30px;  
     border-radius:10px;
@@ -9,37 +16,65 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    min-height:80vh;
-    color: transparent;
+    min-height:50vh;
+    position: relative;
 }
 
-.parallax label {
-    display: block;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 21px;
-}
-
-.parallax.overlay label {
-    display: none;
+.parallax .container {
+    visibility: hidden;
 }
 
 .parallax.overlay {
     background-color: #eeeeee;
     background-blend-mode: overlay;
-    color: initial;
+}
+
+.parallax label {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 50px;
+    color: black;
+    font-size: 16px;
+    padding: 13px;
+    margin: 0px;
+    visibility: visible;
+}
+
+/* parallax with overlay (covering bg image) */
+.parallax.overlay .container {
+    visibility: visible;
+}
+
+.parallax.overlay label {
+    visibility: hidden;;
+}
+
+
+.well {
+    background-color: #ffffff;
+    border:none;
+    box-shadow: none;
+    margin-bottom: 0px;
+}
+
+.parallax .well {
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
 }
 
 .parallax.overlay .glyphicon-remove-sign:before {
     content: "\e088";
-    color: orange;
 }
 
- .glyphicon {
+ .glyphicon-remove-sign {
+    padding: 4px;
+    border-radius: 10px;
     font-size: 3em;
-    color: green;
+    color: #337ab7;
+    position: absolute;
+    top: 0;
 }
 
 #hero {
@@ -53,16 +88,8 @@
     color: white;
 }
 
-#work {
+.career {
     background-image: url("img/work.png");
-}
-
-#social {
-    background-image: url("img/chicago-2.jpg");
-}
-
-#life {
-    background-image: url("img/life.png");
 }
 
  .lead {
@@ -97,23 +124,36 @@ ul.no-bullets {
     list-style-type: none;
 }
 
-#skills .score {
-    float: right;
+.skills .title {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
 }
 
-#skills .glyphicon-star {
-    color: #eee;
+.skills .guide .title {
+    color: #dddddd;
 }
 
-#skills .glyphicon-star.filled {
+.skills .score {
+    display: inline-block;
+}
+
+.skills .glyphicon-star {
+    color: #ddd;
+}
+
+.skills .glyphicon-star.filled {
     color: gold;
 }
 
-#skills .glyphicon {
+.skills .glyphicon {
     font-size: 14px;
 }
 
-#contact a {
+.contact .legend { writing-mode: tb-rl; }
+
+.contact a {
     display: block;
     line-height: 40px;
     margin-bottom: 20px;
