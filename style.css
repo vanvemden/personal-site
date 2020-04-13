@@ -82,11 +82,11 @@ ul.no-bullets {
 
 /* page section images */
 .career {
-    background-image: url("img/career-lg.png");
+    background-image: url("img/career-lg.jpg");
 }
 
 .training {
-    background-image: url("img/training-lg.png");
+    background-image: url("img/training-lg.jpg");
 }
 
 /* page section styling */
@@ -199,22 +199,11 @@ ul.no-bullets {
         width: 90px;
         margin-right: 10px;
     }
- 
 }
 
 @media only screen and (max-width : 480px) {
-    /* page section images */
-    .career {
-        background-image: url("img/career-xs.png");
-    }
-
-    .training {
-        background-image: url("img/training-xs.png");
-    }
-
     .training .media img {
         width: 60px;
         margin-right: 5px;
     }
-    
 }
