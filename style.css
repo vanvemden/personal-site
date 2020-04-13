@@ -2,6 +2,11 @@
     background-color: #ffffff;
 }
 
+ul.no-bullets {
+    list-style-type: none;
+}
+
+/* position anchors lower than narbar */
 .anchor {
     display: block;
     position: relative;
@@ -20,7 +25,7 @@
     position: relative;
 }
 
-.parallax .container {
+.parallax .container-text {
     visibility: hidden;
 }
 
@@ -30,14 +35,11 @@
 }
 
 .parallax label {
-    position: absolute;
-    top: 0;
-    left: 50px;
-    height: 50px;
-    color: black;
-    font-size: 16px;
-    padding: 13px;
-    margin: 0px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 2px 4px;
+    border-radius: 4px;
     visibility: visible;
 }
 
@@ -49,7 +51,6 @@
 .parallax.overlay label {
     visibility: hidden;;
 }
-
 
 .well {
     background-color: #ffffff;
@@ -64,21 +65,33 @@
     border: none;
 }
 
+ .glyphicon-remove-sign {
+    font-size: 3em;
+    color: #337ab7;
+    display: inline-block;
+}
+
+.glyphicon:hover{
+    animation: pop 0.3s linear 1;
+}
+
+/* toggle icon to show/hide bg image */
 .parallax.overlay .glyphicon-remove-sign:before {
     content: "\e088";
 }
 
- .glyphicon-remove-sign {
-    padding: 4px;
-    border-radius: 10px;
-    font-size: 3em;
-    color: #337ab7;
-    position: absolute;
-    top: 0;
+/* page section images */
+.career {
+    background-image: url("img/career-lg.png");
 }
 
-#hero {
-    height: 45vh;
+.training {
+    background-image: url("img/training-lg.png");
+}
+
+/* page section styling */
+.hero {
+    height: 55vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -88,40 +101,8 @@
     color: white;
 }
 
-.career {
-    background-image: url("img/work.png");
-}
-
- .lead {
-    font-family:raleway;  
-    font-weight:100;  
-    margin-top:-10px;  
- }
-
-/* Boostrap overrides */
- body { 
-     padding-top: 50px;
-     padding-bottom: 20vh;
- }
-
- .nav {
-    border: none;
-    background-color: white;
-    color: #405167;
-    font-weight: bold;
-    font-size: 1.2em;
-    height: 50px;
-    display: flex;
-    justify-content: center;
- }
-
- /* Animations */
- .glyphicon:hover{
-    animation: pop 0.3s linear 1;
-}
-
-ul.no-bullets {
-    list-style-type: none;
+.hero h4 {
+    color: #cccccc;
 }
 
 .skills .title {
@@ -151,7 +132,10 @@ ul.no-bullets {
     font-size: 14px;
 }
 
-.contact .legend { writing-mode: tb-rl; }
+.training .media img {
+    width: 120px;
+    margin-right: 20px;
+}
 
 .contact a {
     display: block;
@@ -174,15 +158,63 @@ ul.no-bullets {
 .contact-icon.linkedin {
     background: url(img/linkedin-bug.png);
 }
+/* Boostrap overrides */
+ body { 
+     padding-top: 50px;
+     padding-bottom: 20vh;
+ }
+
+ .nav {
+    border: none;
+    background-color: white;
+    color: #405167;
+    font-weight: bold;
+    font-size: 1em;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .nav>li>a {
+     padding: 10px;
+ }
 
 @keyframes pop{
     50%  {transform: scale(1.2);}
 }
 
-@media (max-width: 991px) {
-    #hero {
-        height: 35vh;
-        background-position: right bottom;
+@media only screen and (min-width : 768px) {
+    .nav {
+        font-size: 1.2em;
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .hero {
+        max-height: 40vh;
+        background-position: right bottom;
+    }
+ 
+    .training .media img {
+        width: 90px;
+        margin-right: 10px;
+    }
+ 
+}
+
+@media only screen and (max-width : 480px) {
+    /* page section images */
+    .career {
+        background-image: url("img/career-xs.png");
+    }
+
+    .training {
+        background-image: url("img/training-xs.png");
+    }
+
+    .training .media img {
+        width: 60px;
+        margin-right: 5px;
+    }
+    
+}
