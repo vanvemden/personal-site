@@ -109,10 +109,8 @@ ul.no-bullets {
   font-size: 12px;
 }
 
-.hero h5 {
+.hero kbd {
   color: #afdaf9;
-  margin: 2px 4px;
-  font-size: 0.8em;
 }
 
 .skills .title {
