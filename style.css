@@ -7,7 +7,7 @@
   background-attachment: scroll;
   background-image: url("img/marco.png");
   background-color: black;
-  color: white;
+  color: #f8f9fa;
   padding-top: 2rem;
 }
 
@@ -88,6 +88,13 @@ ul.no-bullets {
   list-style-type: none;
 }
 
+.card {
+  border-radius: 10px;
+}
+
+.training .card img {
+  border-radius: 10px 0 0 0;
+}
 
 .glyphicon-remove-sign {
   font-size: 3em;
@@ -112,8 +119,6 @@ ul.no-bullets {
 .training {
   background-image: url("img/training.png");
 }
-
-
 
 .skills .title {
   display: inline-block;
@@ -249,9 +254,11 @@ h3 {
 @media (min-width: 992px) {
   .hero {
     max-height: 450px;
-    /* background-position: right bottom; */
-    background-position: center bottom; */
+    background-position: center bottom;
+  }
 
+  .card img {
+    border-radius: 10px 0 0 10px;
   }
 }
 
