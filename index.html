@@ -23,22 +23,20 @@
     <div class="hero jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
-          <div class="col-6 col-sm-12">
+          <div class="col-6 col-sm-12 align-self-start">
             <h1>Hi, I'm Marco</h1>
             <h3>Full Stack Web Developer<br>in San Francisco</h3>
           </div>
-        </div>
-        <div class="row align-items-end">
-          <div class="col-6 col-lg-12 d-none d-sm-block">
+          <div class="col-6 col-lg-12 align-self-end d-none d-sm-block">
             <h4>Languages:</h4>
             <ul>
               <li><kbd>JavaScript</kbd> <kbd>Python</kbd></li>
-              <li><kbd>HTML</kbd> <kbd>CSS</kbd></li>
+              <li><kbd>PHP</kbd> <kbd>HTML</kbd> <kbd>CSS</kbd></li>
               <li><kbd>English</kbd> <kbd>Dutch</kbd> <kbd>German</kbd></li>
             </ul>
           </div>
-          <div class="col-6 col-lg-12 d-none d-sm-block">
-            <h4>Development:</h4>
+          <div class="col-6 col-lg-12 align-self-end d-none d-sm-block">
+            <h4>Technologies:</h4>
             <ul>
               <li><kbd>Node.js</kbd> <kbd>React</kbd> <kbd>Redux</kbd></li>
               <li><kbd>Express.js</kbd> <kbd>Flask</kbd></li>
@@ -50,27 +48,27 @@
     </div>
 
     <a id="about" class="anchor"></a>
-    <div class="about jumbotron jumbotron-fluid">  
+    <div class="about jumbotron jumbotron-fluid bg-white">  
       <div class="container">
         <h1>About</h1>
-        <p>I was born and raised in the Netherlands. In the summer of 1996, I was offered 
+        <p class="lead">I was born and raised in the Netherlands. In the summer of 1996, I was offered 
           a job at the Consulate General of the Netherlands in Los Angeles. 
           It was a dream come true for my wife and I, so we packed up and moved to 
           Redondo Beach, California. In 2010 the consulate re-located to San Francisco,
           and we live in the East Bay now. Still happily married, and proud 
           father of two teenage California girls.</p>
-          <p>After serving my country for 23 years in the Foreign Service, I decided it
+          <p class="lead">After serving my country for 23 years in the Foreign Service, I decided it
             was time for a new career. Having been a passionate programmer since the 
             age of 15, my ambition is becoming a Software Engineer. In May 2020 I started
            the 16 week immersive Full-Stack Web Developer boot camp at Rithm School in 
            San Francisco to 'brush up' on my coding skills, problem solving techniques, 
            and computer science knowledge.</p>
-           <p>In August 2020 I will start looking for my first job as a web developer. 
+           <p class="lead">In August 2020 I will start looking for my first job as a web developer. 
              If you have any questions or suggestions, please do not hesitate to 
              <a class="" href="#contact">contact me</a>.
            </p>
-           <p>Best regards,</p>
-           <p>Marco van Vemden</p>
+           <p class="lead">Best regards,</p>
+           <p class="lead">Marco van Vemden</p>
 
       </div>  
     </div>
@@ -78,11 +76,47 @@
     <a id="training" class="anchor"></a>
     <div class="training jumbotron jumbotron-fluid parallax overlay">
       <div class="container container-label">
-        <span class="glyphicon glyphicon-remove-sign"></span>
+        <i class="fas fa-times-circle fa-2x toggle"></i>
         <label>My favorite spot to learn new coding skills.</label>
       </div>
       <div class="container container-text">
         <h1>Training</h1>
+
+          <div class="row">
+              <div class="col-12 mt-3">
+                  <div class="card">
+                      <div class="card-horizontal">
+                          <div class="img-square-wrapper">
+                              <img class="" src="img/rithmschool.png" alt="Rithm School San Francisco">
+                          </div>
+                          <div class="card-body">
+                              <h4 class="card-title">2020 Full-Stack Web Developer Bootcamp at Rithm School, San Francisco</h4>
+                              <p class="card-text">16 weeks full-time immersive training in HTML, CSS, JavaScript (advanced concepts), server-side Python, database config 
+                                and management, web security, Postgres, Node.js, SQL, React, Redux, hardware and
+                                system design, computer science fundamentals, data structures, and algorithms</p>
+                          </div>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        <div class="card flex-row flex-wrap">
+          <div class="card-header">
+              <img src="img/rithmschool.png" alt="Rithm School San Francisco">
+          </div>
+          <div class="card-block">
+              <h4 class="card-title">2020 Rithm School</h4>
+              <p class="card-text"></p>
+          </div>
+          <div class="w-100"></div>
+          <div class="card-footer w-100 text-muted">
+              Footer stating cats are CUTE little animals
+          </div>
+        </div>
+
         <div class="well media">
           <div class="media-left media-top">
             <img class="media-object img-rounded " src="img/rithmschool.png" alt="Rithm School San Francisco">
@@ -135,546 +169,26 @@
     </div>
 
     <a id="skills" class="anchor"></a>
-    <div class= "skills jumbotron jumbotron-fluid">  
+    <div class= "skills jumbotron jumbotron-fluid bg-white">
       <div class="container">  
         <h1>Skills</h1>
-
-        <div class="well guide">
-          <div class="row">
-            <ul class="no-bullets">
-              <li class="col-md-6 col-lg-4 col-md-offset-6 col-lg-offset-4">
-                <span class="title">basic understanding</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4 col-md-offset-6 col-lg-offset-4">
-                <span class="title">limited experience</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4 col-md-offset-6 col-lg-offset-4">
-                <span class="title">perform successfully</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4 col-md-offset-6 col-lg-offset-4">
-                <span class="title">well experienced</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4 col-md-offset-6 col-lg-offset-4">
-                <span class="title">recognized skill</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="well">
-          <h3>Coding languages</h3>
-          <div class="row">
-            <ul class="no-bullets">
-              <li class="col-md-6 col-lg-4">
-                <span class="title">CSS</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4"">
-                <span class="title">HTML</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4"">
-                <span class="title">JavaScript</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">JQuery</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">JSON</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">PHP</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Python</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Ruby</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Swift</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="well">
-          <h3>Development software</h3>
-          <div class="row">
-            <ul class="no-bullets">
-              <li class="col-md-6 col-lg-4">
-                <span class="title">AngularJS</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Bootstrap</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Chrome</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Drupal</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Express.js</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Flask</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Git</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">GitHub</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Heroku</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">MySQL</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Node</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">PostgreSQL</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">React.js</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Redux</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Terminal</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Vim</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">VSCode</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Wordpress</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">XCode</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                </span>
-              </li>
-            </ul>
-          </div>		
-        </div>
-
-        <div class="well">
-          <h3>Spoken languages</h3>
-          <div class="row">
-            <ul class="no-bullets">
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Dutch</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">English</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">German</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">French</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-            </ul>
-          </div>		
-        </div>
-      
-        <div class="well">
-          <h3>Personality traits</h3>
-          <div class="row">
-            <ul class="no-bullets">
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Adaptability</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Attention to detail</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Communication</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Creativity</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li class="col-md-6 col-lg-4">
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Interpersonal skills</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Leadership</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Problem solving</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Teamwork</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Time Management</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">Work ethic</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-            </ul>
-          </div>		
-        </div>
-    
-        <div class="well">
-          <h3>Personal interests</h3>
-          <div class="row">
-            <ul class="no-bullets">
-              <li class="col-md-6 col-lg-4">
-                <span class="title">raquetball</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">photography</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-              <li class="col-md-6 col-lg-4">
-                <span class="title">playing drums</span>
-                <span class="score">
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star filled"></span>
-                  <span class="glyphicon glyphicon-star "></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </span>
-              </li>
-            </ul>
-          </div>		
-        </div>
+        <ul class="statistics">
+					<li class="style1">
+						<b>JavaScript</b> React | Redux | Node | Express | jQuery | AJAX | Jest | jQuery | TypeScript
+					</li>
+					<li class="style2">
+						<b>Python</b> Flask
+					</li>
+					<li class="style3">
+						<b>SQL</b> PostgreSQL
+					</li>
+					<li class="style4">
+						<b>Ruby</b> Rails
+					</li>
+					<li class="style5">
+						<b>HTML5 &amp; CSS3</b> Bootstrap | SASS
+					</li>
+				</ul>
 
       </div>  
     </div>
@@ -682,7 +196,7 @@
     <a id="career" class="anchor"></a>
     <div class="career jumbotron jumbotron-fluid parallax overlay">  
       <div class="container container-label">
-        <span class="glyphicon glyphicon-remove-sign"></span>
+        <i class="fas fa-times-circle fa-2x toggle"></i>
         <label>View from the Consulate General of the Netherlands in San Francisco.</label>
       </div>
       <div class="container container-text">
@@ -708,17 +222,17 @@
       </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron bg-white">
       <div class="container text-center">
         <a href="pdf/Marco_van_Vemden_Resume.pdf" target="_blank" class="btn btn-primary btn-lg" download>Download full resume in PD format</a>
       </div>
     </div>
 
     <a id="contact" class="anchor"></a>
-    <div class="contact jumbotron jumbotron-fluid">
+    <div class="contact jumbotron jumbotron-fluid bg-dark text-white">
       <div class="container">
         <h1>Contact</h1>
-        <div class="row well">
+        <div class="row well bg-dark">
           <div class="col-md-6">
             <ul class="no-bullets">
               <li>

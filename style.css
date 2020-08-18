@@ -1,12 +1,31 @@
-.jumbotron {
-  background-color: #ffffff;
+/* hero container */
+.hero {
+  height: 325px;
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("img/marco.png");
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
 }
 
-ul.no-bullets {
-  list-style-type: none;
+.hero .row {
+  height: 285px;
 }
 
-/* position anchors lower than narbar */
+.hero h4 {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hero kbd {
+  color: #afdaf9;
+}
+
+/* position anchors lower than naVbar */
 .anchor {
   display: block;
   position: relative;
@@ -54,7 +73,6 @@ ul.no-bullets {
 }
 
 .well {
-  background-color: #ffffff;
   border: none;
   box-shadow: none;
   margin-bottom: 0px;
@@ -65,6 +83,11 @@ ul.no-bullets {
   border-color: transparent;
   border: none;
 }
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
 
 .glyphicon-remove-sign {
   font-size: 3em;
@@ -78,40 +101,19 @@ ul.no-bullets {
 
 /* toggle icon to show/hide bg image */
 .parallax.overlay .glyphicon-remove-sign:before {
-  content: '\e088';
+  content: "\e088";
 }
 
 /* page section images */
 .career {
-  background-image: url('img/career-lg.jpg');
+  background-image: url("img/career-lg.jpg");
 }
 
 .training {
-  background-image: url('img/training.png');
+  background-image: url("img/training.png");
 }
 
-/* page section styling */
-.hero {
-  height: 55vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center bottom;
-  background-image: url('img/marco.png');
-  background-color: black;
-  color: white;
-}
 
-.hero h4 {
-  margin-top: 25px;
-  color: #999999;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.hero kbd {
-  color: #afdaf9;
-}
 
 .skills .title {
   display: inline-block;
@@ -187,46 +189,72 @@ body {
   padding: 10px;
 }
 
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
 @keyframes pop {
   50% {
     transform: scale(1.2);
   }
 }
 
-/* @media only screen and (min-width: 768px) {
-  .nav {
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .hero {
-    max-height: 40vh;
-    background-position: right bottom;
-  }
-
-  .training .media img {
-    width: 90px;
-    margin-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .training .media img {
-    width: 60px;
-    margin-right: 5px;
-  }
-} */
-
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .hero {
-    max-height: 40vh;
-    background-position: right bottom;
-  }
-
   .training .media img {
     width: 90px;
     margin-right: 10px;
   }
+}
+
+/* Extra small (xs) is the default */
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/* Overrides for small devices (sm) */
+@media (min-width: 576px) {
+  .hero {
+    height: 330px;
+    background-position: right bottom;
+  }
+}
+
+/* Overrides for medium devices (md) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .hero {
+    height: 400px;
+    background-position: right bottom;
+  }
+
+  .hero .row {
+    height: 350px;
+  }
+}
+
+/* Overrides for large devices (lg) */
+@media (min-width: 992px) {
+  .hero {
+    max-height: 450px;
+    /* background-position: right bottom; */
+    background-position: center bottom; */
+
+  }
+}
+
+/* Overrides extra large devices (xl) */
+@media (min-width: 1200px) {
 }
