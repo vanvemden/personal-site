@@ -1,4 +1,47 @@
-/* hero container */
+body {
+  padding-top: 50px;
+  padding-bottom: 20vh;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/* bootstrap navbar */
+.nav {
+  border: none;
+  background-color: white;
+  color: #405167;
+  font-weight: bold;
+  font-size: 1em;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav > li > a {
+  padding: 10px;
+}
+
+/* bootstrap card component */
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+/* adjust link anchors for fixed navbar */
+.anchor {
+  display: block;
+  position: relative;
+  top: -75px;
+  visibility: hidden;
+}
+
+/* hero section */
 .hero {
   height: 325px;
   background-position: right bottom;
@@ -25,18 +68,9 @@
   color: #afdaf9;
 }
 
-/* position anchors lower than naVbar */
-.anchor {
-  display: block;
-  position: relative;
-  top: -75px;
-  visibility: hidden;
-}
-
 /* parallax without overlay (showing bg image) */
 .parallax {
-  margin: 15px 30px 30px 30px;
-  border-radius: 10px;
+  margin: 15px 0 30px 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -72,84 +106,39 @@
   visibility: hidden;
 }
 
-.well {
-  border: none;
-  box-shadow: none;
-  margin-bottom: 0px;
-}
-
-.parallax .well {
-  background-color: transparent;
-  border-color: transparent;
-  border: none;
-}
-
-ul.no-bullets {
-  list-style-type: none;
-}
-
-.card {
-  border-radius: 10px;
-}
-
-.training .card img {
-  border-radius: 10px 0 0 0;
-}
-
-.glyphicon-remove-sign {
-  font-size: 3em;
-  color: #337ab7;
-  display: inline-block;
-}
-
-.glyphicon:hover {
-  animation: pop 0.3s linear 1;
-}
-
-/* toggle icon to show/hide bg image */
-.parallax.overlay .glyphicon-remove-sign:before {
-  content: "\e088";
-}
-
-/* page section images */
-.career {
-  background-image: url("img/career-lg.jpg");
-}
-
+/* training section */
 .training {
   background-image: url("img/training.png");
 }
 
-.skills .title {
-  display: inline-block;
-  width: 50%;
-  text-align: right;
-  padding-right: 20px;
+.training .card {
+  background-color: transparent;
+  border: none;
 }
 
-.skills .guide .title {
-  color: #dddddd;
+.training .card:hover {
+  background-color: #f8f9fa;
 }
 
-.skills .score {
-  display: inline-block;
+/* skills section */
+
+/* career section */
+.career {
+  background-image: url("img/career-lg.jpg");
 }
 
-.skills .glyphicon-star {
-  color: #ddd;
+.career .list-group-item {
+  background-color: transparent;
+  border: none;
 }
 
-.skills .glyphicon-star.filled {
-  color: gold;
+.career .list-group-item:hover {
+  background-color: #f8f9fa;
 }
 
-.skills .glyphicon {
-  font-size: 14px;
-}
-
-.training .media img {
-  width: 120px;
-  margin-right: 20px;
+/* contact section */
+.contact ul {
+  list-style-type: none;
 }
 
 .contact a {
@@ -172,54 +161,6 @@ ul.no-bullets {
 
 .contact-icon.linkedin {
   background: url(img/linkedin-bug.png);
-}
-/* Boostrap overrides */
-body {
-  padding-top: 50px;
-  padding-bottom: 20vh;
-}
-
-.nav {
-  border: none;
-  background-color: white;
-  color: #405167;
-  font-weight: bold;
-  font-size: 1em;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.nav > li > a {
-  padding: 10px;
-}
-
-.card-horizontal {
-  display: flex;
-  flex: 1 1 auto;
-}
-
-@keyframes pop {
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-  .training .media img {
-    width: 90px;
-    margin-right: 10px;
-  }
-}
-
-/* Extra small (xs) is the default */
-h1 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.25rem;
 }
 
 /* Overrides for small devices (sm) */
@@ -256,12 +197,4 @@ h3 {
     max-height: 450px;
     background-position: center bottom;
   }
-
-  .card img {
-    border-radius: 10px 0 0 10px;
-  }
-}
-
-/* Overrides extra large devices (xl) */
-@media (min-width: 1200px) {
 }
