@@ -90,8 +90,7 @@ h3 {
 
 .parallax label {
   display: inline-block;
-  color: white;
-  background-color: black;
+  background-color: #f8f9fa;
   padding: 2px 4px;
   border-radius: 4px;
   visibility: visible;
