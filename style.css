@@ -120,6 +120,10 @@ h3 {
 }
 
 /* skills section */
+.badge-secondary {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #6c757d;
+}
 
 /* career section */
 .career {
