@@ -1,7 +1,7 @@
 window.addEventListener("load", (event) => {
   (function () {
-    let activeBadgeColor = "#008000";
-    let inactiveBadgeColor = "#6c757d";
+    let activeBadgeColor = "#28a745";
+    let inactiveBadgeColor = "#ffffff";
 
     /**
      * Event listeners for parallax icon to show/hide overlay
@@ -29,6 +29,7 @@ window.addEventListener("load", (event) => {
 
         // Set currently active badges to inactive
         document.querySelectorAll(".skills .badge").forEach((e) => {
+          e.style.color = activeBadgeColor;
           e.style.backgroundColor = inactiveBadgeColor;
         });
 
@@ -44,6 +45,7 @@ window.addEventListener("load", (event) => {
         document
           .querySelectorAll(`.skills .badge.proj-${project_num}`)
           .forEach((e) => {
+            e.style.color = inactiveBadgeColor;
             e.style.backgroundColor = activeBadgeColor;
           });
       });
@@ -55,6 +57,7 @@ window.addEventListener("load", (event) => {
     buttons[0].classList.toggle("btn-success");
     buttons[0].classList.toggle("btn-outline-success");
     document.querySelectorAll(".skills .badge.proj-1").forEach((e) => {
+      e.style.color = inactiveBadgeColor;
       e.style.backgroundColor = activeBadgeColor;
     });
   })();

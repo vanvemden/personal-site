@@ -1,6 +1,5 @@
 body {
   padding-top: 50px;
-  padding-bottom: 20vh;
 }
 
 h1 {
@@ -121,13 +120,17 @@ h3 {
 
 /* skills section */
 .badge-secondary {
-  transition: background-color 0.5s ease-in-out;
-  background-color: #6c757d;
+  transition: background-color 1s ease-out;
+  background-color: #ffffff;
+  color: #28a745;
+  border: 1px solid #28a745;
+  margin: 4px;
 }
 
 /* career section */
 .career {
   background-image: url("img/career-lg.jpg");
+  margin-bottom: 0px;
 }
 
 .career .list-group-item {
@@ -140,10 +143,6 @@ h3 {
 }
 
 /* contact section */
-.contact ul {
-  list-style-type: none;
-}
-
 .contact a {
   display: block;
   line-height: 40px;
@@ -151,19 +150,11 @@ h3 {
 }
 
 .contact-icon {
-  float: left;
-  margin-right: 20px;
   height: 40px;
   width: 40px;
   display: inline-block;
-}
-
-.contact-icon.twitter {
-  background: url(img/twitter-bug.png);
-}
-
-.contact-icon.linkedin {
   background: url(img/linkedin-bug.png);
+  vertical-align: middle;
 }
 
 /* Overrides for small devices (sm) */
