@@ -75,6 +75,7 @@ h3 {
   background-position: center;
   background-size: cover;
   position: relative;
+  border: 1px solid #dedede;
 }
 
 .parallax .container-text {
@@ -111,6 +112,7 @@ h3 {
 .training .card {
   background-color: transparent;
   border: none;
+  padding: 0.75rem 1.25rem;
 }
 
 .training .card:hover {
@@ -119,7 +121,7 @@ h3 {
 
 /* skills section */
 .badge-secondary {
-  transition: background-color 1s ease-out;
+  transition: background-color 0.5s ease-out;
   background-color: #ffffff;
   color: #28a745;
   border: 1px solid #28a745;
